@@ -34,5 +34,12 @@ export default [
         { allowConstantExport: true },
       ],
     },
+    env: {
+      browser: true, // jika Anda mengembangkan aplikasi frontend
+      node: true,    // jika Anda menggunakan Node.js
+    },
+    globals: {
+      process: 'readonly', // Menambahkan 'process' sebagai global
+    },
   },
 ]
