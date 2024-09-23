@@ -8,10 +8,13 @@ const Login = () => {
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post("http://localhost:5000/login", {
-        username,
-        password,
-      });
+      const res = await axios.post(
+        "https://login-backend-production-b0d5.up.railway.app/login",
+        {
+          username,
+          password,
+        }
+      );
       localStorage.setItem("token", res.data.token);
       alert("Login successful");
     } catch (error) {

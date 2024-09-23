@@ -9,7 +9,7 @@ const Register = () => {
     e.preventDefault();
     try {
       await axios.post(
-        "https://login-backend-production-b0d5.up.railway.app/login",
+        "https://login-backend-production-b0d5.up.railway.app/register",
         {
           username,
           password,
